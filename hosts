@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export LINODE_API_KEY=""
+export LIMIT_GROUP=""
+export INTERNAL_IPS=""
+export NON_PREFIXED_TAGS=""
+
+NODE=$(which node)
+
+${NODE} hosts.js "$@"
+

@@ -5,7 +5,7 @@ var querystring = require('querystring');
 var config = {
 	api_key: process.env['LINODE_API_KEY'],
 	limit_group: process.env['LIMIT_GROUP'],
-	external_ips: process.env['EXTERNAL_IPS'] == '1',
+	internal_ips: process.env['INTERNAL_IPS'] == '1',
 	non_prefixed_tags: process.env['NON_PREFIXED_TAGS'].split(',')
 };
 
@@ -146,7 +146,7 @@ function run()
 			Object.keys(servers).forEach(function(id) {
 				var linode = servers[id];
 				var tags = parse_label(linode.LABEL);
-				var ip = config.external_ips ? linode.IPPUBLIC : linode.IPPRIVATE;
+				var ip = config.internal_ips ? linode.IPPRIVATE : linode.IPPUBLIC;
 
 				var entry = {
 					id: id,

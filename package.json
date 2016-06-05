@@ -1,0 +1,10 @@
+{
+  "name": "ansible-linode-inventory",
+  "version": "0.1.0",
+  "description": "A linode adapter for ansible's inventory system",
+  "author": "Andrew Lyon",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.0"
+  }
+}

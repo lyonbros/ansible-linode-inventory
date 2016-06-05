@@ -53,7 +53,7 @@ This is handy if you want to run ansible internally
   `NON_PREFIXED_TAGS=groups` then you will have `tag_groups_www` *and*
   `www`.
 
-## LIC?ENSE
+## LICENSE
 
 MIT. Copyright Lyon Bros. Enterprises, LLC.
 

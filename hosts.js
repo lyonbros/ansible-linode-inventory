@@ -171,7 +171,7 @@ function run()
 					output[key].push(ip);
 				};
 
-				output._meta.hostvars[entry.ip_internal] = entry;
+				output._meta.hostvars[ip] = entry;
 				key_push('id_'+entry.id);
 				key_push('datacenter_'+entry.datacenter);
 				key_push('group_'+entry.group);

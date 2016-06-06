@@ -159,7 +159,7 @@ function run()
 						'1': 'running',
 						'2': 'stopped'
 					})[linode.STATUS],
-					ip_internal: ip,
+					ip_internal: linode.IPPRIVATE,
 					ip_external: linode.IPPUBLIC,
 					name: tags.name
 				};
